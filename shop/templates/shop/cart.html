@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+{% block body %}
+<body>
+<h1>
+   <span id="itm">0</span>
+</h1>
+</body>
+  {% block js %}
+<script>
+document.getElementById('itm').innerHTML = Object.keys(Cart).length;
+</script>
+{% endblock%}
+
+         {% endblock %}
+
+
